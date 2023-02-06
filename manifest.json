@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "GPTinder",
+    "version": "1.0.0",
+    "description": "GPT-powered flirting assistant.",
+    "icons": {
+        "128": "assets/images/icons/GPTinderLogo.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "dist/popup.html",
+        "default_icon": "assets/images/icons/GPTinderLogo.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "./dist/index.bundle.js"
+            ],
+            "matches": [
+                "https://tinder.com/*"
+            ]
+        }
+    ]
+}

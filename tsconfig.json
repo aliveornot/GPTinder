@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "noImplicitAny": true,
+      "strict": false,
+      "strictNullChecks": true,
+      "esModuleInterop": true,
+      "jsx": "react"
+    },
+    "include": [
+      "src/**/*.ts"
+, "src/popup/reactSrc/App.tsx", "src/popup/reactSrc/popupEntry.tsx", "src/contentScripts/index.tsx"    ]
+  }
+  
